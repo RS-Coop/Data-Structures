@@ -1,0 +1,94 @@
+Midterm 2 Data Structures:
+
+Trees
+	-Search
+    Search using recursion or iterative methods using one of the traversal
+    techniques listed below. O(n) if visiting every node, O(log(n)) if using
+    binary search tree.
+	-Insertion
+    Go until null and insert at this position. For binary search trees this
+    will mean going left or right depending on what you are looking for. Always
+    insert at leaf
+	-Deletion
+    Three different cases for deletion on binary search tree so as to preserve
+    properties.
+
+    Leaf: Simply make the the child null so that its parent points to a null
+    child.
+
+    Node w/ one child: If node has one child then replace node with that child
+    and make child null effectively deleting the node.
+
+    Node w/ two children: Find in-order successor which is the left most leaf
+    node starting from the right child of the node to be deleted. Replace the
+    node to be deleted with this node and then recursively run the function to
+    delete the in-order successor.
+
+  -Implementation
+    Uses pointers to point from a root to its children.
+
+  -Types
+    Binary/Trinary: Specific number of children i.e. one two...
+
+    Search Trees: Specific ordering that allows faster search i.e left child
+
+    Full/Strict: Each node has 2 or no children.
+    Perfect: Each node has at least 2 children and all leaves are at same level.
+    Complete: All nodes are as far left as possible and each level except
+      possibly the last are filled.
+
+  -Traversal
+    Pre-order: Prints root, left, right.
+    Post-order: Prints left, right, root.
+    In-order: Prints left, root, right.
+
+Hash Tables
+	-Search
+    Can be O(1) if properly set up. However, various collision resolution methods
+    could change this.
+	-Insertion
+    Can be O(1), but see above.
+	-Deletion
+    Can be O(1), but see above.
+
+  -Implementation
+    Requires a hashing function to obtain an index based on the data.
+
+  -Collision Resolution
+    -Linear Probing: If position is taken up then just move one up.
+    -Linking: If position is taken up then link new data to old data.
+
+Heaps/Priority Queues
+  -Search
+    O(1) if looking for max in max heap or min in min heap.
+  -Insertion
+    O(n) for array and O(log(n)) for heap. Insert at end and then repair up.
+  -Deletion
+    O(n). Replace with last value and then repair down.
+
+  -Implementation
+    Can be visualized and implemented as an array or a tree. In an array type
+    the values start at index 1 with the root, and the children of a root
+    located at i*2 (for left) and i*2+1 (for right). i/2 is parent index of child.
+
+  -Heapification:
+    For insertion and deletion it is required to heapify the heap to maintain
+    its properties.
+
+Graphs
+  -Search
+    Use BFS or DFS to search through graph.
+  -Insertion
+    Just adds a new edge.
+  -Deletion
+
+  -Implementation
+    Uses pointers to point from one node to another. Stores information about
+    adjacency in a matrix or vector. Can be directed or undirected.
+
+  -Search Algorithms
+    -Breadth First Search:
+      Search in a level first before going deeper. Uses a queue to search.
+    -Depth First Search:
+      Search deeper in graph where possible. Uses stacks either directly or in
+      the form of recursion. Mark as visited.

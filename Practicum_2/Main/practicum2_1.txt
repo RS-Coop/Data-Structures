@@ -1,0 +1,28 @@
+Problem 1:
+
+Running:
+All one needs to do it run the file and it will output wether the tree made
+in the main is a valid min heap as well.
+
+Algorithm:
+Using recursion I iterated through the tree checking for valid min heap
+properties in each subtree of a root and its two children. If it violated this
+property then I set the boolean in my function to false. This boolean was passed
+at each recursive step. In the end if it was ever set to false then the tree
+violated the property.
+
+Output:
+coopers-MacBook-Pro:Main forrestoandcoopie$ g++ -std=c++11 practicum2_1.cpp -o run
+coopers-MacBook-Pro:Main forrestoandcoopie$ ./run
+Test 1
+This is a valid minheap.
+
+Test 2
+This is not a valid minheap.
+
+Test 3
+This is not a valid minheap.
+coopers-MacBook-Pro:Main forrestoandcoopie$
+
+As can be seen the program outputs whether or not it is a min heap. This is
+the expected output as the only valid min heap is the tree in the first test. 

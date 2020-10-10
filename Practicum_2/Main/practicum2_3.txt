@@ -1,0 +1,30 @@
+Problem 3:
+
+Running:
+The solution I made to this problem requires that one only compile the .cpp, but
+there is a header file that contains the information for the graph class that
+I use.
+
+Algorithm:
+Running BFS on the graph allows one to visit all of the nodes from all possible
+approaches. In the modifies BFS no matter if the node has been visited or not
+each time it is found in an edge its associated incoming data member is incremented.
+Likewise each time a node is come across in another nodes edges its outgoing data
+member is incremented. Then one can search for the largest of these values.
+
+Output:
+coopers-MacBook-Pro:Main forrestoandcoopie$ g++ -std=c++11 practicum2_3.cpp -o run
+coopers-MacBook-Pro:Main forrestoandcoopie$ ./run
+Test 1
+Node with most incoming edges: 31->5
+Node with most outgoing edges: 5->3
+
+Test 2
+Node with most incoming edges: 3->4
+Node with most outgoing edges: 2->3
+coopers-MacBook-Pro:Main forrestoandcoopie$
+
+Was only able to do two tests due to time. In these tests I get the right node
+that would be expected for each individual graph in the outgoing and incoming
+category. However, I do not get the right number of incoming and outgoing edges
+for these nodes. This wasn't actually part of the problem but it is the truth.

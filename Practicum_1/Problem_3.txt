@@ -1,0 +1,100 @@
+econ2-215-188-dhcp:Practicum_1 forrestoandcoopie$ g++ -std=c++11 Practicum_1.3.cpp -o runP3
+
+econ2-215-188-dhcp:Practicum_1 forrestoandcoopie$ ./runP3
+6
+8
+7
+3
+5
+The capacity is: 5
+There are 5 elements
+##########
+8
+7
+3
+5
+The capacity is: 5
+There are 4 elements
+##########
+3
+46
+21
+69
+8
+7
+3
+5
+The capacity is: 10
+There are 8 elements
+##########
+8
+7
+3
+5
+The capacity is: 5
+There are 4 elements
+##########
+56
+59
+51
+23
+534
+4
+6
+0
+2
+3
+10
+9
+7
+3
+5
+8
+7
+3
+5
+The capacity is: 20
+There are 19 elements
+##########
+11
+43
+56
+59
+51
+23
+534
+4
+6
+0
+2
+3
+10
+9
+7
+3
+5
+8
+7
+3
+5
+The capacity is: 40
+There are 21 elements
+##########
+3
+10
+9
+7
+3
+5
+8
+7
+3
+5
+The capacity is: 10
+There are 10 elements
+##########
+
+Above can be seen the output for problem 3. The output is long as I had many test
+cases, but the basic structure is as follows. Print the stack, the capacity, and
+the number of elements. It can be seen that the capacity will double when it gets
+too big and then halve when it gets to be half the size of its capacity. 

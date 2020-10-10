@@ -1,0 +1,14 @@
+To solve this solution I used graphs to build a node representation of the nxn
+matrix specified as part of the command line argument. A node represents each
+position in the matrix (1,1; 2,2; 3,2) etc. Using a modified BFS for shortest
+path I then find the shortest path from between two nodes and print it out. The
+position of Ironman and Thanos are both specified in the command line argument.
+
+To run file: ./a.out <row of Ironman> <Column of Ironman> <Row of Thanos> <Column of Thanos>
+
+The program then prints the shortest distance and path of nodes.
+
+Time complexity:
+The program builds the graph in O(n^2) time as it has to make a node for each
+position of which there are n*n. The complexity for finding the shortest path
+is also O(n^2) because it iterates through all nodes in BFS.

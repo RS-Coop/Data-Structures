@@ -1,0 +1,18 @@
+econ2-215-188-dhcp:Practicum_1 forrestoandcoopie$ g++ -std=c++11 Practicum_1.1.cpp -o runP1
+
+econ2-215-188-dhcp:Practicum_1 forrestoandcoopie$ ./runP1
+2->7->10->3->5->1
+1
+7->9->0->2->3
+0
+1
+0
+1
+
+This shows the output of the first problem in my terminal. First I compile, and
+then I run the program. Here it prints the list and then prints true or false
+depending on whether or not it is even. 1 for true if it is even, and 0 for false
+if it is not even.
+
+The process of the output is as follow: The list -> True -> The next list -> False
+-> The next list of only 1 -> False -> True as it is an empty list.
